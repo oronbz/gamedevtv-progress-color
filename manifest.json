@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GameDev.tv Progress Color",
+  "version": "1.1",
+  "description": "Colors the progress bar on GameDev.tv",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}
